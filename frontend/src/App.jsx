@@ -1,10 +1,33 @@
-import "./App.css";
+import { useEffect, useState } from "react";
+import ContactInfo from "./components/ContactInfo";
+import ContactUsForm from "./components/ContactUsForm";
+import { fetchContentInfo } from "./services/services";
 
 function App() {
+  const [content, setContents] = useState({});
+
+  const getContent = async () => {
+    try {
+      const contentInfo = await fetchContentInfo();
+      setContents(contentInfo);
+    } catch (error) {
+      console.error("Failed to fetch content info:", error);
+    }
+  };
+  console.log(content);
+
+  useEffect(() => {
+    getContent();
+  }, []);
+
   return (
-    <main className="max-w-[1440px] mx-auto h-screen">
-      <div className="bg-purple-300">
-        <h1 className="">Contact us, we love to hear from you</h1>
+    <main className="  flex flex-col pt-[50px] md:pt-[100px] h-screen text-[#1B1B1A] ">
+      <h1 className=" px-4 font-semibold text-3xl md:text-4xl">
+        {content?.pageHeader}
+      </h1>
+      <div className="flex flex-wrap mt-8  ">
+        <ContactInfo content={content} />
+        <ContactUsForm content={content} />
       </div>
     </main>
   );

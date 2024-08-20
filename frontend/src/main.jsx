@@ -7,7 +7,7 @@ import ThankYou from "./pages/ThankYou.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
-  { path: "/thankyou", element: <ThankYou /> },
+  { path: "/thank-you", element: <ThankYou /> },
 ]);
 
 createRoot(document.getElementById("root")).render(
