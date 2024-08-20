@@ -15,7 +15,6 @@ This is a full-stack web application that allows users to submit a "Contact Us" 
 
 ```bash
 git clone https://github.com/Matt-T993/Matthew-Theseira-Open-Agent-Tech-Test-Submission.git
-cd contact-us-app
 ```
 ### 2. Set up backend
 created a env file and add this:
