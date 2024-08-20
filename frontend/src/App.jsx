@@ -6,6 +6,7 @@ import { fetchContentInfo } from "./services/services";
 function App() {
   const [content, setContents] = useState({});
 
+  // function to fetch content info
   const getContent = async () => {
     try {
       const contentInfo = await fetchContentInfo();
@@ -14,7 +15,6 @@ function App() {
       console.error("Failed to fetch content info:", error);
     }
   };
-  console.log(content);
 
   useEffect(() => {
     getContent();

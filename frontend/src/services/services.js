@@ -2,6 +2,7 @@ import axios from "axios";
 
 const API_URL = "http://localhost:3000/api";
 
+// function to fetch all content info
 export const fetchContentInfo = async () => {
   try {
     const response = await axios.get(
@@ -14,6 +15,7 @@ export const fetchContentInfo = async () => {
   }
 };
 
+// function to create contact us
 export const createContactUs = async (contactUs) => {
   try {
     const response = await axios.post(`${API_URL}/contact-us`, contactUs);
