@@ -14,21 +14,24 @@ This is a full-stack web application that allows users to submit a "Contact Us" 
 ### 1. Clone the Repository
 
 ```bash
-git clone 
+git clone https://github.com/Matt-T993/Matthew-Theseira-Open-Agent-Tech-Test-Submission.git
 cd contact-us-app
 ```
 ### 2. Set up backend
-cd backend
-npm install
 created a env file and add this:
 MONGO_URI=mongodb+srv://matthewtheseira:Rambo123@openagent-tech-test.zbap3.mongodb.net/?retryWrites=true&w=majority&appName=openAgent-tech-test
+```bash 
+cd backend
+npm install
 npm run dev
+```
 
 ### 3. Set up frontend
+```
 cd frontend
 npm install
 npm run dev
-
+```
 
 
 
