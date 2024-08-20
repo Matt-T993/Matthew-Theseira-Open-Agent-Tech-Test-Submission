@@ -14,9 +14,9 @@ This is a full-stack web application that allows users to submit a "Contact Us" 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/contact-us-app.git
+git clone 
 cd contact-us-app
-
+```
 ### 2. Set up backend
 cd backend
 npm install
