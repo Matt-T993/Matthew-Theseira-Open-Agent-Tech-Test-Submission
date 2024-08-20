@@ -6,8 +6,7 @@ This is a full-stack web application that allows users to submit a "Contact Us" 
 
 - Ensure you have the following installed:
 
-- **Node.js** (v14.x or later)
-- **npm** (v6.x or later)
+- **Node.js** (v20.x or later)
 
 ## Installation
 
