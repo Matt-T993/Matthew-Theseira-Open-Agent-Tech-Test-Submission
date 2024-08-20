@@ -20,9 +20,7 @@ app.use("/api/contact-us", contactUsRoutes);
 app.use("/api/content", contentRoutes);
 
 mongoose
-  .connect(
-    "mongodb+srv://matthewtheseira:Rambo123@openagent-tech-test.zbap3.mongodb.net/?retryWrites=true&w=majority&appName=openAgent-tech-test"
-  )
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("Connected to MongoDB!");
     app.listen(3000, () => {
