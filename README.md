@@ -16,8 +16,9 @@ This is a full-stack web application that allows users to submit a "Contact Us" 
 git clone https://github.com/Matt-T993/Matthew-Theseira-Open-Agent-Tech-Test-Submission.git
 ```
 ### 2. Set up backend
-Add your MongoDB connection string to the .env file. Note: Replace <username>, <password>, and <cluster-url> with your actual MongoDB credentials:
-MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/yourDatabaseName?retryWrites=true&w=majority
+Add your MongoDB connection string to the `.env` file in the backend directory. Note: Replace `<username>`, `<password>`, and `<cluster-url>` with your actual MongoDB credentials:
+
+MONGO_URI=mongodb+srv://`<username>`:`<password>`@`<cluster-url>`/yourDatabaseName?retryWrites=true&w=majority
 
 ```bash 
 cd backend
